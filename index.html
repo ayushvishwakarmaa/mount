@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="./assest/bg.jpg" id="bg">
+        <h2 id="text">Mountains</h2>
+        <img src="./assest/man.png" id="man">
+        <img src="./assest/clouds_1.png" id="clouds_1">
+        <img src="./assest/mountain_left.png" id="mountain_left">
+        <img src="./assest/mountain_right.png" id="mountain_right">
+        <img src="./assest/clouds_2.png" id="clouds_2">
+    </section>
+    <div class="sec">
+        <h2>ScrollTrigger is Awesome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi unde tempore repellendus nisi illo ipsum explicabo quos quibusdam, harum optio sequi sapiente esse quisquam laboriosam exercitationem aliquid accusamus aperiam. Amet, voluptas eaque quaerat aliquam dolorem laudantium adipisci vel dolore sunt, quos rem quisquam velit consequatur nobis, minus assumenda. Ea harum nemo excepturi! Repellendus labore at delectus illum debitis repellat est praesentium eos porro et autem, ipsam unde quibusdam minus provident, quas saepe quisquam nostrum repudiandae laboriosam adipisci assumenda! Ex perferendis odit, nihil ipsam sint suscipit vitae ut ab inventore <br> obcaecati provident nemo odio blanditiis maxime, numquam pariatur placeat temporibus sed illo unde! Velit placeat vero voluptatem, ut at laborum sit perspiciatis dolore, ipsa illo porro laudantium! Minima quibusdam asperiores tempore, voluptatibus assumenda temporibus rem veritatis? Quibusdam minima aperiam odit aut repellat, voluptatem sunt quae porro inventore non hic repudiandae rem, ut temporibus quisquam recusandae suscipit adipisci id tempore ab, possimus aliquid in assumenda reiciendis. Consequatur laborum porro quasi ullam quia ea ipsam vel nobis. Consequatur eum blanditiis voluptas excepturi quisquam molestias, ratione tempora cumque mollitia placeat neque. Distinctio suscipit laborum, perspiciatis omnis, adipisci quidem odio fugit dolores sequi molestias iure. Autem tempora earum asperiores explicabo nesciunt voluptates recusandae itaque maxime debitis iste commodi, similique ab adipisci officiis sed rem excepturi mollitia doloribus inventore aspernatur labore ratione. Itaque nihil distinctio ducimus inventore rem, odio non numquam, totam voluptatum quaerat tempora dolor. Est, maiores. Porro, fugiat veritatis quia ipsum expedita ipsa. Assumenda minus officia error nesciunt repellat culpa, porro eos voluptatibus ipsam rerum natus magni quisquam odit corrupti pariatur, quae voluptatum eum tempora nemo recusandae iste, necessitatibus expedita! Laborum hic vitae voluptates harum exercitationem optio maxime consectetur rerum est fuga adipisci in quas voluptas asperiores provident debitis eius quisquam quod, animi minima. Nesciunt unde hic, repellendus harum beatae repudiandae reprehenderit velit deleniti voluptatum itaque impedit dolor quos reiciendis modi eum commodi saepe sint sunt officiis rem. In non molestiae explicabo assumenda dolor dolores suscipit, necessitatibus voluptate amet possimus expedita eaque veniam aliquid neque, odio voluptatibus, hic quas quis beatae perferendis? Aperiam id corrupti velit obcaecati facilis error quae et veritatis nisi necessitatibus itaque, quo sint quis temporibus minima vitae consectetur sit suscipit ut. Delectus reiciendis, porro fugit est quidem iste voluptate aliquam nisi magni quis. Vitae delectus laborum voluptates dignissimos, omnis voluptatum vero fugiat voluptas odio earum. Facere quibusdam optio quae, similique quod iusto blanditiis eveniet dolorem vero vitae itaque illo?</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+         
+        gsap.to("#mountain_left",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500
+        });
+        
+        gsap.to("#mountain_right",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500
+        });
+
+        gsap.to("#clouds_1",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -200
+        });
+        gsap.to("#clouds_2",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -200
+        });
+        gsap.to("#text",{
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500
+        });
+
+
+    </script>
+</body>
+</html>
